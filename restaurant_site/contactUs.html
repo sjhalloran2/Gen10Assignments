@@ -1,0 +1,97 @@
+<html>
+<head>
+  <title> Restaurant Site Home Page</title>
+</head>
+<body>
+  <header>
+    <h1> Sammy's Classic Restaurant</h1>
+  </header>
+  <nav>
+    <hr />
+    <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
+    <table>
+      <tr>
+        <th>
+          <a href="homePage.html">Home</a>
+        </th>
+        <th>
+          <a href="menu.html">Menu</a>
+        </th>
+        <th>
+          <a href="contactUs.html">Contact Us</a>
+        </th>
+      </tr>
+    </table>
+  <hr />
+  </nav>
+  <section>
+<form action="submit.html" method="POST">
+  <label for="fullName">Name:</label>
+  <input type="text" id="fullName" name="fullName"> <br />
+  <div>
+  </div>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"> <br />
+  <div>
+  </div>
+  <label for="phone">Phone Number:</label>
+  <input type="text" id="phone" name="phone"> <br />
+  <div>
+  </div>
+  <label for="reasonMenu">Reason For Inquiry:</label>
+
+  <select id="reasonMenu" name="reasonMenu">
+    <option value="default" selected>Catering</option>
+    <option value="privateParty">Private Party</option>
+    <option value="feedback">Feedback</option>
+    <option value="other">Other</option>
+  </select><br />
+
+  <div>
+  </div>
+
+  <p>Additional Info:
+  <textarea id="addInfo" name="addInfo" rows="7" cols = "25"></textarea>
+</p>
+  <div>
+  </div>
+
+<article>
+    <p>Have you been to the restaurant?
+    <input type="radio" id="yesChoice" name="yesChoice" value="yes">
+    <label for="yesChoice">Yes</label>
+    <input type="radio" id="noChoice" name="noChoice" value="no">
+    <label for="yesChoice">No</label>
+    </p>
+  </article>
+
+  <div>
+  </div>
+
+<article>
+  <p>Best days to contact you
+    <input type="checkbox" id="Monday" name="Monday" value="M">
+    <label for="Monday">M</label>
+    <input type="checkbox" id="Tuesday" name="Tueday" value="T">
+    <label for="Tuesday">T</label>
+    <input type="checkbox" id="Wednesday" name="Wednesday" value="W">
+    <label for="Wednesday">W</label>
+    <input type="checkbox" id="Thursday" name="Thursday" value="Th">
+    <label for="Thursday">Th</label>
+    <input type="checkbox" id="Friday" name="Friday" value="F">
+    <label for="Friday">F</label>
+    </p>
+  </article>
+
+  <div>
+  </div>
+
+  <input type="submit" name="submit" value="Send Request">
+  </section>
+  </body>
+  <footer>
+       <hr />
+       <p id = addressP >999 Grand Avenue, Saint Paul, MN, 55105 </p>
+       <p id = phoneNumer> 651-999-9999 </p>
+  </footer>
+  </html>
