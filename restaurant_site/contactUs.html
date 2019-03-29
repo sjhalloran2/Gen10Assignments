@@ -1,43 +1,30 @@
 <html>
 <head>
-  <title> Restaurant Site Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> Restaurant Site ContactUs page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <header>
-    <h1> Sammy's Classic Restaurant</h1>
+  <header class="jumbotron">
+      <h1>Sammy's Classic Restaurant</h1>
+      <h2 class="font-italic">A family favorite since 2019</h2>
+      <h3 class="text-right mt-5">ContactUs Page</h3>
   </header>
   <nav>
-    <hr />
-    <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
-    <table>
-      <tr>
-        <th>
-          <a href="homePage.html">Home</a>
-        </th>
-        <th>
-          <a href="menu.html">Menu</a>
-        </th>
-        <th>
-          <a href="contactUs.html">Contact Us</a>
-        </th>
-      </tr>
-    </table>
-  <hr />
-  </nav>
+    <a class="btn badge-pill" href="homePage.html"><span class="badge badge-light"><img src="restImages/homeIcon.svg" alt="homeIcon" class="img-fluid" /></span>Home Page</a>
+    <a class="btn badge-pill" href="contactUs.html"><span class="badge badge-light"><img src="restImages/phoneIcon.svg" alt="phoneIcon" class="img-fluid" /></span>Contact Us</a>
+    <a class="btn badge-pill" href="menu.html"><span class="badge badge-light"><img src="restImages/menuIcon.svg" alt="menuIcon" class="img-fluid" /></span>Menu</a>
+</nav>
   <section>
 <form action="submit.html" method="POST">
   <label for="fullName">Name:</label>
   <input type="text" id="fullName" name="fullName"> <br />
-  <div>
-  </div>
   <label for="email">Email:</label>
   <input type="text" id="email" name="email"> <br />
-  <div>
-  </div>
   <label for="phone">Phone Number:</label>
   <input type="text" id="phone" name="phone"> <br />
-  <div>
-  </div>
   <label for="reasonMenu">Reason For Inquiry:</label>
 
   <select id="reasonMenu" name="reasonMenu">
@@ -47,11 +34,8 @@
     <option value="other">Other</option>
   </select><br />
 
-  <div>
-  </div>
-
   <p>Additional Info:
-  <textarea id="addInfo" name="addInfo" rows="7" cols = "25"></textarea>
+  <textarea id="addInfo" name="addInfo" rows="5" cols = "25"></textarea>
 </p>
   <div>
   </div>
@@ -64,9 +48,6 @@
     <label for="yesChoice">No</label>
     </p>
   </article>
-
-  <div>
-  </div>
 
 <article>
   <p>Best days to contact you
@@ -82,16 +63,24 @@
     <label for="Friday">F</label>
     </p>
   </article>
-
-  <div>
-  </div>
-
+<div>
   <input type="submit" name="submit" value="Send Request">
   </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
   <footer>
-       <hr />
-       <p id = addressP >999 Grand Avenue, Saint Paul, MN, 55105 </p>
-       <p id = phoneNumer> 651-999-9999 </p>
+       <div class=container>
+         <div class="row">
+           <div class"col-lg-3 col-md">
+             <p id = addressP >999 Grand Avenue, Saint Paul, MN, 55105 </p>
+           </div>
+           <div class="col-lg-3 col-md">
+             <p id = phoneNumer> 651-999-9999 </p>
+           </div>
+         </div>
+     </div>
   </footer>
   </html>

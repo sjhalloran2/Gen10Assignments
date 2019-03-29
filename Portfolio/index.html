@@ -7,22 +7,55 @@ Most recent revision: 3/22/2019
 <html>
 <head>
   <title> Sam Halloran's Portfolio </title>
+  <link href="style/portStyle.css" rel="stylesheet" type="text/css" />
+  <link href="style/imageStyle.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <header>
     <h1> Portfolio For Sam Halloran </h1>
+    <style>
+
+      caption{
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        table, th, td {
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+        }
+
+        tr {
+            height: 30px;
+        }
+
+        th {
+            background-color: #546a7b;
+            color: #f2eded;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #e4c3ad;
+        }
+
+    </style>
   </header>
   <nav>
-    <hr />
     <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
     <p><a href="projects.html">Projects</a></p>
     <p><a href="contact.html">Contact</a></p>
     <p><a href="Testimonials.html">Testimonials</a></p>
-
-    <hr />
+  <div class="clear-float"></div>
   </nav>
   <section>
-  <article>
+  <article id = aboutMeA>
   <h2><em> About Me </em></h2>
   <img src="images/Selfie.jpg" alt="Selfie of Sam Halloran" />
     <p id = aboutMeP>My name is Samuel Joseph Halloran and I am applying to the Genisis10 Dev10 program.
@@ -32,17 +65,22 @@ Most recent revision: 3/22/2019
     <p id = aboutMeP2>I have one sister name Mara and one brother named Thomas. Mara is the middle child and Thomas is the youngest.
       My parents are Joseph and Kristi Halloran and they live in the MAC/Groveland area of Saint Paul MN
     </p>
+    <div class = "clear-float" </div>
     </article>
-    <article>
+    <article id = pastExperA>
   <h2><em> Past Experiences </em></h2>
   <img src="images/emptyChair.jpg" alt="Empty Chair pic">
+  <div class="right-content">
   <table border=1>
         <caption>Employment History</caption>
+        <thread>
         <tr>
             <th>Years of Employment</th>
             <th>Title</th>
             <th>Company</th>
         </tr>
+      </thread>
+      <tbody>
         <tr>
             <td>Semptember 2018 - Present</td>
             <td>Computer Science Lab TA</td>
@@ -58,11 +96,15 @@ Most recent revision: 3/22/2019
             <td>Lawn Maintences</td>
             <td>Belair Company</td>
         </tr>
+      </tbody>
     </table>
+    </div>
+    <div class = "clear-float" </div>
     </article>
-    <article>
+    <article id = hobbiesA>
   <h2><em> Hobbies </em></h2>
-  <img src="images/football.jpg" alt="football players pic">
+  <img src="images/football.jpg" alt="football players pic" height=400px width=300px >
+  <div class="right-content">
   <ul>
         <li>Favorite Sports To Play</li>
         <ol>
@@ -91,9 +133,11 @@ Most recent revision: 3/22/2019
             <li>Snowboarding</li>
         </ul>
     </ul>
+  </div>
+  <div class = "clear-float" </div>
     </article>
 <section>
-  <footer>
+  <footer style= "color: black">
        <hr />
        <p id = CopyrightP ><span style="background-color: yellow">&copy; 2020 Sam Halloran. All rights reserved.</span></p>
   </footer>

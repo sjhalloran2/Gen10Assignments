@@ -1,0 +1,40 @@
+header{
+   background-color: #5b7d87;
+   color: #000000;
+   height: 175px
+  }
+footer{
+   background-color: #5b7d87;
+   position: fixed;
+   color: #000000;
+   height: 50px;
+   margin-bottom: 0px;
+   bottom:0;
+   width:100%;
+}
+
+.jumbotron{
+  color: #000000;
+  background-color:#5b7d87
+}
+
+body{
+  min-height: 400px;
+  margin-bottom: 150px;
+  clear: both;
+}
+nav {
+  border-top: thin #1C3BFF solid;
+  border-bottom: thin #1C3BFF solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  }
+
+  nav .btn {
+  background-color: #5b7d87;
+  color: #000000;
+  }
+
+  nav .btn:hover {
+  font-weight: bold;
+  }
