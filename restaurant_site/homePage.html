@@ -11,11 +11,38 @@ Most recent revision: 3/29/2019
   <title> Restaurant Site Home Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+  <style>
+  body{
+    min-height: 400px;
+    margin-bottom: 150px;
+    background-color: gray;
+    clear: both;
+  }
+  nav {
+    border-top: thin #1C3BFF solid;
+    border-bottom: thin #1C3BFF solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    }
+
+    nav .btn {
+    background-color: #5b7d87;
+    color: #000000;
+    }
+
+    nav .btn:hover {
+    font-weight: bold;
+    }
+
+    a:visited {
+        color: #9F18D0;
+    }
+  </style>
 </head>
 <body>
   <header class="jumbotron">
-      <h1>Sammy's Classic Restaurant</h1>
-      <h2 class="font-italic">A family favorite since 2019</h2>
+      <h1 style="font-family:georgia,garamond,serif;font-style:italic;">Sammy's Classic Restaurant</h1>
+      <h2 style="font-family:"Comic Sans MS", "Comic Sans", cursive;">A family favorite since 2019</h2>
       <h3 class="text-right mt-5">Home Page</h3>
   </header>
 
@@ -27,10 +54,10 @@ Most recent revision: 3/29/2019
 
 <div class=container>
   <div class="row">
-<div class="col-lg-3 col-md">
-    <figure><img src="restImages/eat-321671_640.jpg" alt="Photo of food stuff" class="img-fluid" /></figure>
+<div class="col-lg-4 col-md">
+    <figure><img src="restImages/eat-321671_640.jpg" alt="Photo of food stuff" class="img-fluid" style="border: thick black solid;"/></figure>
 </div>
-<div class="col-lg-9 col-md">
+<div class="col-lg-6 col-md">
     <p id = restaurantDesc>Sammy's Classic Restaurant is a fantastic family friendly place. We have great food and
       great service with a killer menu. We opened our doors in the Spring of 2019 and ever since then have been
       a neighborhood favorite. Our chiefs are seasoned vets and have recieved multiple city awards for
@@ -48,10 +75,10 @@ Most recent revision: 3/29/2019
      <div class=container>
        <div class="row no-gutter">
          <div class"col-lg-3 col-md">
-           <p id = addressP >999 Grand Avenue, Saint Paul, MN, 55105 </p>
+           <p id = addressP >Street Address: 999 Grand Avenue, Saint Paul, MN, 55105 </p>
          </div>
          <div class="col-lg-3 col-md">
-           <p id = phoneNumer> 651-999-9999 </p>
+           <p id = phoneNumer> Phone #: 651-999-9999 </p>
          </div>
        </div>
    </div>
